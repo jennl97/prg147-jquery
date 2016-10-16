@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery Project</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".button1").click(function(){
+                $("#p1").css("color", "black").slideUp(2000).slideDown(2000);
+            });
+            $(".button2").click(function(){
+                var div = $(".move");
+                div.animate({left: '300px'}, "slow");
+                div.animate({fontSize: '30px'}, "slow");
+            });
+            $(".button3").click(function(){
+                var div = $(".move2");
+                div.animate({height: '200px', opacity: '0.4'}, "slow");
+                div.animate({width: '200px', opacity: '0.8'}, "slow");
+                div.animate({height: '100px', opacity: '0.4'}, "slow");
+                div.animate({width: '100px', opacity: '0.8'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+<main class="w3-container constrain w3-purple">
+    <h1>Jenn's JQuery project</h1>
+    <h2 id="head1" class="w3-purple">Let's do a little SLIDING!!</h2>
+    <div id="detail1">
+        <p id="p1">Slide up, change color, JQuery can do it all!</p>
+        <button class="button1">Look what I can do!</button>
+    </div>
+
+    <h2 id="head2" class="w3-purple">Animation is totally my thing!!</h2>
+    <div id="detail2">
+        <p>Look at me animating everywhere.</p>
+        <button class="button2">Click Me!</button>
+        <div class="move" style="background-color: azure; color: black; height: 100px; width: 200px; position: relative;">WEEEEEEEE!</div>
+    </div>
+
+    <h2 id="head3" class="w3-purple">One more animation for good measure!</h2>
+    <div id="detail3">
+        <p>This animation is probably useless in real world applications, but it sure is fun!</p>
+        <button class="button3">Click me!</button>
+        <div class="move2" style="background: red;height:100px;width:100px;position:absolute;"></div>
+    </div>
+</main>
+
+
+
+</body>
+</html>

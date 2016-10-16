@@ -1,0 +1,28 @@
+.constrain {
+    max-width: 1060px;
+    margin: 5px auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 1em;
+    min-height: 400px; }
+
+#detail1, #detail2, #detail3, #detail4 {
+    background: olivedrab;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.3em; }
+
+#detail2,{
+    min-height: 250px;
+}
+
+#detail3{
+    min-height: 350px;
+}
+
+.move, .move2{
+    margin-top: 10px;
+}
